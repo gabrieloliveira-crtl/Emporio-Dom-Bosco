@@ -4,8 +4,96 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    vertical-align: baseline;/**/
+    font-family: segoe UI, roboto, helvetica, arial, sans-serif;
 }
 html{
     width: 100%;
     height: 100%;
+}
+header{
+    /* responsavel por colocar os itens na mesma linha (lado a lado) */
+    display: flex;
+    /* alinha os itens do nosso header para o centro */
+    align-items: center;
+    /* tradução:justificar-conteudo:espaço uniforme. alinhar os itens igualmente dentro da pagina */
+    justify-content: space-evenly;
+    /* cuida do preenchimento */
+    padding: 2%; 
+    /* cor de fundo do nosso cabeçalho/header */
+    background-color: rgb(56, 49, 49);
+    
+}
+header h1{
+    /* selecionamos aqui a cor da letra do nosso h1 ou seja, do nosso titulo */
+    color: white;/* chamamos a propriedade color e definimos uma cor em questao */
+    font-size: 45px;/* tamanho da letra */
+}
+header img{
+    /* aqui estamos chamando nossa imagem para ser atribuidas alteraçoes */
+    width: 11rem;/* lagura da nossa imagem */
+    height: auto;/* tamanho da nossa imagem no tamanho automatico */
+}
+
+.item-menu-header{/* nossa li que estao dentro do LIST MENU, onde se encontram os nomes dos itens apresentados no HEADER */
+    margin-right: 25px;/* margem da direita */
+
+}
+.item-menu-header a:hover{/* mpssa li que esta dentro do LIST MENU. (a) nossa tag de link que é representada por: HOME/PRODUTOS/CONTATO, e o hover responsavel pela modificação de cor ao passar o cursor em cima */
+    color: yellow;/* aqui atribuimos uma cor */
+    transition: 1s;/* e o tempo em que sera exibido ao passar o cursor */
+
+}
+.item-menu-header a{/* nossa li que estao dentro do LIST MENU. (a) nossa tag */
+color: white;
+font-size: 0.8em;
+}
+
+.navbar{
+    color: white;/* cor da letra */
+    display: flex;/* flexiveis */
+    justify-content: space-between;/* a distribuiçao dos itens seja com space-between */
+    align-items: center;/* alinhamento da verical */
+    padding: 10px 20px;/* preenchimento superior/inferior e esquerda/direita */
+    height: 50px;/* altura do navbar */
+}
+.nav-links{/* aqui estamos estilizando a UL */
+    list-style: none;/* retirando o estilo de lista */
+    margin: 0;/* zerando os espaços de margen que sao habilitado por padrao */
+    padding: 0;/* zerando os espaços de margen que sao habilitado por padrao */
+    display: flex;/* tornando a caixa flexivel */
+}
+.nav-links li{
+    padding: 0 9px;/* preenchimento da LI superior/inferior 0 e laterais em 9px */
+}
+.nav-links a,
+.nav-links-mobile a{
+    color: white;
+    text-decoration: none;
+}
+.mobile-menu{
+    display: none;/* display:nenhum */
+    position: fixed;/* posição fixa na parte direita da pagina */
+    top: 0;/* superior em 0 fazendo a caixa encostar ao topo */
+    right: 0;/* direita em 0 fazendo a caixa encostar a direita */
+    width: 60%;/* largura em porcentagem */
+    height: 100%;/* altura de 100% da tela */
+    background-color: rgb(0,0 ,0 );/* cor de fundo */
+    flex-direction: column;/* direção dos itens dentro da caixa */
+    align-items: center;/* alinhamento na vertical do itens */
+    font-size: 1.8rem;/* tamanho da letra dentro da caixa */
+}
+.nav-links-mobile{/* lista nao ordenada da versao mobile */
+    display: flex;/* tornando os itens (LISTAS) flexiveis */
+    flex-direction: column;/* estamos direcionando o posicionamento dessas listas */
+    text-align: center;/* alinhando o texto ao centro */
+    gap: 1.2rem;/* espaço entre as linhas */
+    /* width: 0%;zeamos a largura podendo retirar essa linha para testar visualiza-lo */
+    list-style: none;/* estilo de lista desabilitado */
+    /* padding: 0;preenchimento zerado, podendo tambem ser retirado para teste */
+}
+
+.nav-links-mobile li{/* lista versao mobile */
+    border-bottom: 1px solid #787272;/* barda inferior de cada lista */
+    padding-bottom: 1.2rem;/* tamanho da borda */
 }
