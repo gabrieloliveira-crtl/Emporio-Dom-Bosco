@@ -97,3 +97,22 @@ font-size: 0.8em;
     border-bottom: 1px solid #787272;/* barda inferior de cada lista */
     padding-bottom: 1.2rem;/* tamanho da borda */
 }
+.hamburguer,
+.close{/* estilizando os botoes de abertura e fechamento */
+    font-size: 14px;/* tamanho elemento  */
+    background: none;/* removido o background */
+    border: none;/* BORDA NENHUMAAAAAAA */
+    color: white;/* cor do elemento */
+    cursor: pointer;/* cursor habilitado */
+    display: none;/* escondendo os botoes */
+} 
+.close{
+    margin-top: 20px;/* espaçamento superior do X */
+    margin-right: 20px;/* espaçamento a direita do X */
+    display: block;/* formataçao da imagem em bloco */
+    align-self: end;/* alinhamento do botão */
+}
+.flex{/* elemento usado no JS */
+    display: flex;/* tornando item flexivel e visivel. */
+}
+
