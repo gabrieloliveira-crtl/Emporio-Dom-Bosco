@@ -1,0 +1,181 @@
+* {        /*Configurações padrões de início de um projeto dentro do CSS  */
+    padding: 0;            
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    font-family: Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+
+body {
+    background-color: #15142b;
+    background-image: linear-gradient(180deg, #726c5b, #795a2d);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header > h1 {
+    color: white;
+    text-shadow: 3px 3px 0px black;
+    font-size: 50px;
+}
+
+
+.text > p {
+    color: white;
+    font-size: 20px;
+}
+
+.text-js {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 18rem;
+    margin-top: 15px;
+    padding: 10px 40px; /* Preenchimento da altura e largura do botão */
+    border: 0; /* Aqui zeramos a borda */
+    border-radius: 10px; /* Colocamos aqui um arredondamento no Botão */
+    background-color: rgb(187, 207, 207); /* Cor do Botão */
+    color: rgb(255, 255, 255); /* Cor da letra (Dentro do Botão) */
+    cursor: pointer; /* Torna o botão em algo clicavel  */
+}
+
+.text-js a {
+    text-decoration: none;
+    color: rgb(100, 95, 95);
+    font-size: 15px;
+}
+
+.text-js a:hover {
+    color: #15142b;
+    transition: 0.3s;
+    font-size: 18px;
+}
+header {
+    display: flex; /* Resposável por colocar os itens na mesma linha (lado a lado) */
+    align-items: center; /*Alinhar os itens do nosso Header para o centro*/
+    justify-content: space-evenly; /* Tradução:justificar-conteúdo: espaço uniformemente. Alinhar os itens igualmente dentro da página */
+    padding: 2%;  /* Cuida do Preenchimento */
+    background-color: rgb(56, 49, 49); /* Cor de fundo do nosso Cabeçalho/Header */
+    overflow: hidden; /* */
+    
+}
+
+header > h1 {  /* Selecionamos aqui a cor da letra do nosso H1 ou seja, do nosso título */
+  color: white; /* chamamos a propriedade color e definimos uma cor em questão */ 
+  font-size: 45px; /*Tamanho da letra*/
+}
+
+
+header > img {  /* Aqui estamos chamando nossa imagem para ser atribuídas alterações*/
+  width: 11rem;  /* Largura da nossa imagem */
+  height: auto; /* Tamanho da nossa imagem no tamanho automático*/
+}
+
+
+.item-menu-header { /* Nossas li que estão dentro do LIST MENU, onde se encontram os nomes dos itens apresentados no HEADER */
+  margin-right: 25px; /* margem da direita */
+}
+
+.item-menu-header > a:hover { /* Nossas li que estão dentro do LIST MENU. (a) nossa tag de link que é representada por: HOME/PRODUTOS/CONTATO, e o Hover responsável pela modificação de cor ao passar o cursor em cima.*/
+  color: yellow; /* Aqui atribuimos uma cor */
+  transition: 1s; /* E o tempo em que será exibido ao passar o cursor */
+}
+
+.item-menu-header > a { /* Nossas li que estão dentro do LIST MENU. (a) nossa tag de link que é representada por: HOME/PRODUTOS/CONTATO */
+  color: white; /* Cor das letras */
+  text-decoration: none; /* Responsável por tirar o sublinhado inferior que estava visível */
+  font-size: 0.8em; /* Tamanho da letra */
+} 
+
+
+.navbar {
+  color: white; /*Cor da letra*/
+  display: flex; /*Flexíveis*/
+  justify-content: space-between; /*A distribuição dos itens sejam com Space-between*/
+  align-items: center; /*Alinhamento da vertical*/
+  padding: 1rem 1.5rem; /*Preenchimento superior/inferior e esquerda/direita*/
+  height: 2.6rem; /*Altura do NavBar*/
+}
+
+.nav-links { /*Aqui estamos estilizando a UL (lista não ordenada)*/
+  list-style: none; /*Retirando o estilo de lista*/ 
+  display: flex; /*Tornando a caixa flexível, e lado a lado*/
+  margin: 0; /*Zerando os espaços de margem que são habilitados por padrão*/
+  padding: 0; /*Zerando os preenchimentos que são habilitados por padrão*/
+}
+
+
+.nav-links li { /*Estilizando nossa LI que está dentro da UL*/
+  padding: 0 8px; /*Preenchimento da LI superior/inferior 0 e laterais em 9px*/
+}
+
+#btn-header {   /*Nossa ID do Botão de Login */
+    display: flex; /*  Resposável por colocar os itens na mesma linha (lado a lado) */
+}
+
+#btn-header > button { /* Aqui chamamos nossa ID e onde queremos fazer alterações, no caso o nosso BOTÃO (button)*/
+    padding: 8px; /*  Cuida do Preenchimento */
+    background-color: transparent; /* Aqui deixamos o fundo do Botão transparent, ou seja sem o fundo Branco que estava em primeiro plano */
+    border: none; /* None é usado para retirar algo, nesse caso a borda. */ 
+}
+
+#btn-header > button > a { /* Estamos chamando aqui nossa TAG de Link para alteração. */ 
+    display: flex; /* Resposável por colocar os itens na mesma linha (lado a lado)  */
+    align-items: center; /* Alinhar os itens para o centro */
+    gap: 5px;
+    color: white; /*Cor da letra */
+    text-decoration: none; /* Responsável por tirar o sublinhado que estava visível */
+    font-weight: 400; /* espessura da fonte */
+}
+
+#btn-header > button > a > img { /* Aqui estamos mexendo nO ICON do botão*/
+    width: 1.8rem; /* Largura */
+    height: auto; /* Tamanho */
+}
+
+footer {    /* */
+    padding: 6%;  /* */
+    background-image: url(img/img-footer.jpg);  /* */
+    background-position: bottom;  /* */
+    background-repeat: no-repeat;  /* */
+    
+}
+
+footer > ul {   /* */
+    display: flex;  /* */
+    justify-content: space-evenly;  /* */
+}
+
+footer > h2 {  /* */
+    color: black bold; /* */
+    font-size: 40px;  /* */
+    font-weight: bold;  /* */
+    text-align: center;  /* */
+    margin-bottom: 1em;  /* */
+}
+
+.item-menu-footer {  /* */
+    display: flex;  /* */
+    align-items: center;  /* */
+    margin-top: 30px;  /* */
+}
+
+.item-menu-footer > img {  /* */
+    width: 34px;  /* */
+    height: 34px;  /* */
+}
+
+.item-menu-footer > p {  /* */
+    color: black bold; /* */
+    font-size: 24px; /* */
+    font-weight: bold; /* */
+    margin-left: 10px; /* */
+}
