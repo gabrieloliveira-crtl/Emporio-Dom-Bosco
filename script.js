@@ -8,3 +8,34 @@ hamburgerButton.addEventListener("click", function(){
 closeButton.addEventListener("click", function(){
     mobileMenu.classList.remove("flex");
 });
+window.revelar = ScrollReveal({reset:true});
+
+
+revelar.reveal('.efeito-img-topo', {
+    duration: 2000,
+    distance: '90px'
+})
+
+
+revelar.reveal('.clientes-efeito', {
+    duration: 2000,
+    distance: '120px'
+})
+
+
+
+revelar.reveal('.principais-produtos', {
+    duration: 2000,
+    distance: '200px'
+})
+revelar.reveal('.sobre-nos-js', {
+    duration: 2000,
+    distance: '200px',
+    origin: 'left'
+})
+revelar.reveal('.pagina-produtos', {
+    duration: 2000,
+    distance: '200px',
+    origin: 'left'
+})
+
